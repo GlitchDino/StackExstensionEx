@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head><meta charset="UTF-8"></head>
+    <link rel="stylesheet" type="text/css" href="options.css">
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td colspan='2' class="logo"></td>
+        </tr>
+        <tr>
+          <td class="title">1. Allow CORS (include cross-domain images)</td>
+          <td class="option">
+            <input type="checkbox" id="cors"></input>
+          </td>
+        </tr>
+        <tr>
+          <td class="title">2. Screenshot scale factor (default is 2)</td>
+          <td class="option">
+            <input type="number" id="scale-factor" min=1 max=10></input>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

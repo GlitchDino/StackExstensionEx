@@ -1,0 +1,59 @@
+body {
+  border: 0;
+  color: #333;
+  width: 400px;
+  padding: 0 5px;
+  font-size: 12px;
+  margin: 5px auto;
+  font-family: arial,sans-serif;
+}
+
+table {
+  border: 0;
+  width: 100%;
+  border-spacing: 0 15px;
+}
+
+table tr td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  transition: 300ms ease all;
+}
+
+.container {
+  border: 0;
+  margin: auto;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.logo {
+  height: 128px;
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+  background: url('../icons/128.png') no-repeat center center;
+  background-size: 64px;
+}
+
+.title {
+  width: 100%;
+}
+
+.option {
+  text-align: right;
+}
+
+.option input[type="checkbox"] {
+  margin: 0;
+}
+
+.option input[type="number"] {
+  margin: 0;
+  width: 72px;
+  height: 32px;
+  outline: none;
+  padding: 0 5px;
+  font-size: 12px;
+  font-family: monospace;
+  border: solid 1px rgba(0,0,0,0.1);
+}

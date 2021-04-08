@@ -1,0 +1,83 @@
+body, body *:not(.lightbox-container) * {
+  cursor: crosshair !important;
+}
+
+.lightbox-container {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  cursor: default;
+  z-index: 2147483647;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.80);
+  box-shadow: inset 0 0 300px #020202;
+  transition: 700ms opacity ease-in-out;
+}
+
+.lightbox-container img:not(.lightbox-loader) {
+  height: auto;
+  max-height: 620px;
+  max-width: 1080px;
+}
+
+.lightbox-loader {
+  border: 0;
+  padding: 0;
+  width: auto;
+  height: 32px;
+  outline: none;
+  position: absolute;
+  top: calc(50% - 16px);
+}
+
+.lightbox-close {
+  top: 16px;
+  left: 16px;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  position: absolute;
+  font-family: monospace;
+  transition: 300ms ease all;
+  background-color: transparent;
+}
+
+.lightbox-download {
+  top: 52px;
+  left: 16px;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  position: absolute;
+  font-family: monospace;
+  transition: 300ms ease all;
+  background-color: transparent;
+}
+
+.lightbox-close:hover {
+  background-color: #c33030;
+}
+
+.lightbox-download:hover {
+  opacity: 1.0;
+  background-color: #000;
+}
+
+*[html-elements-screenshot-mouseover-effect] {
+  transition: 300ms ease background-color;
+  background-color: rgba(187, 62, 133, 0.7);
+}
